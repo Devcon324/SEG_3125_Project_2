@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+// This creates the main page of the app
 function App() {
   return (
     <div className="App">
