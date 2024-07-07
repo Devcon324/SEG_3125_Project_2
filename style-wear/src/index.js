@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+// import the App component from the App.js file
 import App from './App';
 
 // takes all react components and renders them to the root element in DOM
