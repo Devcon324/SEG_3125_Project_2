@@ -4,6 +4,7 @@ import './index.css';
 
 // import the App component from the App.js file
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // takes all react components and renders them to the root element in DOM
 // renders the App component to the root element

@@ -4,9 +4,14 @@ import facebook from './assets/images/facebook_icon.svg';
 import twitter from './assets/images/twitter_icon.svg';
 import instagram from './assets/images/instagram_icon.svg';
 
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Button from 'react-bootstrap/Button';
+
+import SearchBar from './Searchbar';
 
 const Navbar = () => {
-  return (
+    return (
     <div className="header">
       <div className="title">
         <h1>Style Wear</h1>
@@ -25,14 +30,27 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="navbar">
+        <SearchBar />
         <div className="links">
-          <a href="/">Home</a>
-          <a href="/shirts">Shirts</a>
-          <a href="/pants">Pants</a>
-          <a href="/shoes">Shoes</a>
-          <a href="/examples">Examples</a>
-          <a href="/pricing">Pricing</a>
-          <a href="/contact">Contact</a>
+          <Button variant="secondary" className="mt-2" href="/">Home</Button>
+          <DropdownButton
+          id="dropdown-button-dark-example2"
+          variant="secondary"
+          title="Popular Shirts"
+          className="mt-2"
+          data-bs-theme="light"
+          >
+            <Dropdown.Item href="#/action-1">T-Shirt</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Long-Sleeve Shirt</Dropdown.Item>
+            <Dropdown.Item href="#/action-4">Hoodie</Dropdown.Item>
+            <Dropdown.Item href="#/action-6">Tank Top</Dropdown.Item>
+            <Dropdown.Item href="#/action-9">Dress Shirt</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item href="#/action-10">Clearence</Dropdown.Item>
+          </DropdownButton>
+          <Button variant="secondary" className="mt-2" href="/examples">Examples</Button>
+          <Button variant="secondary" className="mt-2" href="/pricing">Pricing</Button>
+          <Button variant="secondary" className="mt-2" href="/contact">Contact</Button>
         </div>
       </nav>
     </div>
