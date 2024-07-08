@@ -1,6 +1,27 @@
-import {sidebarItems} from './SidebarItems'
+function ShirtSidebar() {
+  const sidebarItems = [
+    {
+      title: "T-Shirt",
+      link: "/t-shirt",
+    },
+    {
+      title: "Button-Up",
+      link: "/button-up",
+    },
+    {
+      title: "Polo",
+      link: "/polo",
+    },
+    {
+      title: "Hoodie",
+      link: "/hoodie",
+    },
+    {
+      title: "Cart",
+      link: "/cart",
+    },
+  ];
 
-function Sidebar() {
   return (
     <div className="Sidebar">
       <ul className="SidebarList">
@@ -11,7 +32,8 @@ function Sidebar() {
               className="row"
               id={window.location.pathname === val.link ? "active" : ""}
               onClick={() => {
-                window.location.pathname = val.link;}}
+                window.location.pathname = val.link;
+              }}
             >
               <div id="title">{val.title}</div>
             </li>
@@ -22,4 +44,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default ShirtSidebar;
