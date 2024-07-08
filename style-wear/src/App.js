@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Home from './Home';
 import Hero from './Hero';
+import EmailForm from './EmailForm';
 import Foot from './Foot';
 
 // This is a component named App that returns JSX template
@@ -17,6 +18,9 @@ function App() {
       </div>
       <div className="content">
         < Home />
+      </div>
+      <div className='emailForm'>
+        < EmailForm />
       </div>
       <div className="footer">
         < Foot />
