@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SEG_3125_Project_2/static/css/main.eb2473ae.css",
+    "main.js": "/SEG_3125_Project_2/static/js/main.cde52520.js",
+    "static/media/hero_trim_1440p.mp4": "/SEG_3125_Project_2/static/media/hero_trim_1440p.a46338a1e1baa77bf52f.mp4",
+    "static/media/shirt_example.png": "/SEG_3125_Project_2/static/media/shirt_example.b836c91b50244339f5e2.png",
+    "static/media/instagram_icon.svg": "/SEG_3125_Project_2/static/media/instagram_icon.b8f07093aa9f32554be319cd21de60b8.svg",
+    "static/media/phone_icon.svg": "/SEG_3125_Project_2/static/media/phone_icon.78dc2b1eea03e7fddb41b37d7e9c265d.svg",
+    "static/media/destination_icon.svg": "/SEG_3125_Project_2/static/media/destination_icon.ddd7df0d1ab1583e4e9efadebbca6152.svg",
+    "static/media/facebook_icon.svg": "/SEG_3125_Project_2/static/media/facebook_icon.a0275541acf64870bad527f67f5c7461.svg",
+    "index.html": "/SEG_3125_Project_2/index.html",
+    "static/media/twitter_icon.svg": "/SEG_3125_Project_2/static/media/twitter_icon.e53139218fc4eca46ad163079832e288.svg",
+    "main.eb2473ae.css.map": "/SEG_3125_Project_2/static/css/main.eb2473ae.css.map",
+    "main.cde52520.js.map": "/SEG_3125_Project_2/static/js/main.cde52520.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb2473ae.css",
+    "static/js/main.cde52520.js"
+  ]
+}
