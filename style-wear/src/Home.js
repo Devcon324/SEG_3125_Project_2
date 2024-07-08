@@ -1,11 +1,13 @@
+import Examples from "./Example";
+
 const Home = () => {
-  const title = 'Welcome to the Style Wear online store';
-  const likes = 50;
-  const link = 'https://www.google.com';
+  // const title = 'Welcome to the Style Wear online store';
+  // const likes = 50;
+  // const link = 'https://www.google.com';
 
   return (
     <div className="home">
-      <h1>{ title }</h1>
+      {/* <h1>{ title }</h1>
       <p>
         Shop the latest fashion trends
         liked by { likes } people
@@ -15,7 +17,10 @@ const Home = () => {
       </p>
       <a
         href={ link }>Google
-      </a>
+      </a> */}
+
+      <Examples />
+
     </div>
    );
 }

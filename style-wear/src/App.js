@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Home from './Home';
 import Hero from './Hero';
+import Foot from './Foot';
 
 // This is a component named App that returns JSX template
 // this is the first component that is rendered to the DOM
@@ -8,12 +9,17 @@ import Hero from './Hero';
 function App() {
   return (
     <div className="App">
-      < Navbar />
+      <div>
+        < Navbar />
+      </div>
       <div className="hero-image">
         < Hero />
       </div>
       <div className="content">
         < Home />
+      </div>
+      <div className="footer">
+        < Foot />
       </div>
     </div>
   );

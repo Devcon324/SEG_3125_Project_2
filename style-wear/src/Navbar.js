@@ -40,17 +40,16 @@ const Navbar = () => {
           className="mt-2"
           data-bs-theme="light"
           >
+            <Dropdown.Item href="#/action-1">ALL SHIRTS</Dropdown.Item>
+            <Dropdown.Divider />
             <Dropdown.Item href="#/action-1">T-Shirt</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Long-Sleeve Shirt</Dropdown.Item>
             <Dropdown.Item href="#/action-4">Hoodie</Dropdown.Item>
             <Dropdown.Item href="#/action-6">Tank Top</Dropdown.Item>
             <Dropdown.Item href="#/action-9">Dress Shirt</Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item href="#/action-10">Clearence</Dropdown.Item>
           </DropdownButton>
-          <Button variant="secondary" className="mt-2" href="/examples">Examples</Button>
-          <Button variant="secondary" className="mt-2" href="/pricing">Pricing</Button>
-          <Button variant="secondary" className="mt-2" href="/contact">Contact</Button>
+          <Button variant="secondary" className="mt-2" href="#examples">Examples</Button>
+          <Button variant="secondary" className="mt-2" href="#contact">Contact</Button>
         </div>
       </nav>
     </div>
