@@ -3,6 +3,8 @@ import phone from '../assets/images/phone_icon.svg';
 import facebook from '../assets/images/facebook_icon.svg';
 import twitter from '../assets/images/twitter_icon.svg';
 import instagram from '../assets/images/instagram_icon.svg';
+// import styles
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (

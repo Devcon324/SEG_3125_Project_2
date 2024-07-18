@@ -1,4 +1,6 @@
 import fashion_hero from '../assets/videos/hero_trim_1440p.mp4';
+// import styles
+import '../styles/Hero.css';
 
 const Hero = () => {
   return (

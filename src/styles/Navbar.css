@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title h1 {
+    display: flex;
+    align-items: center;
+    color: #f8e8ff;
+    padding-bottom:5px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: /* gradient can be an image */
+      linear-gradient(
+        to left,
+        rgba(92,7,52,1) 0%,
+        rgba(134,29,84,1) 12%,
+        rgba(255,93,177,1) 47%,
+        rgba(83,0,30,1) 100%
+      )
+      left
+      bottom
+      no-repeat;
+    background-size:100% 1px ;/* if linear-gradient, we need to resize it */
+    /* border-bottom: #df90ff 2px solid; */
+    /* padding-bottom: 0.5rem;
+    margin-left: 20px;
+    margin-right: 20px; */
+    /* font-weight: bolder; */
+}
+.navbar .links {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+.navbar a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* color: #6d3f6f; */
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #a81f58;
+}
+.dropdown-menu {
+    color: black;
+}

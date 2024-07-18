@@ -1,3 +1,6 @@
+// import styles
+import '../styles/AboutUs.css';
+
 const AboutUs = () => {
     return (
       <div className="aboutUs">

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import styles
+import '../styles/SearchBar.css';
 
 const items = [
   { name: 'T-Shirt' },

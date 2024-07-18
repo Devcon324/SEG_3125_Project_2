@@ -8,6 +8,9 @@ import Navbar from 'react-bootstrap/Navbar';
 // import { NavLink } from "react-router-dom";
 import SearchBar from './Searchbar';
 
+// import styles
+import '../styles/Navbar.css';
+
 function NavScrollExample() {
   return (
     <Navbar bg="transparent" variant="dark" expand="lg">

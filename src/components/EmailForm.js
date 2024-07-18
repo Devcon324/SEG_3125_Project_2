@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import styles
+import '../styles/EmailForm.css';
 
 const EmailForm = () => {
   const [name, setName] = useState('');
