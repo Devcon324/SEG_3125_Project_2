@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Navbar';
-import Home from './Home';
-import Footer from './Foot';
-import Create from './Create';
-import Shop from './Shop';
-import FAQ from './FAQ';
-import Contact from './Contact';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import Create from './pages/Create';
+import Shop from './pages/Shop';
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
 
 // This is a component named App that returns JSX template
 // this is the first component that is rendered to the DOM

@@ -1,8 +1,8 @@
-import destination from './assets/images/destination_icon.svg';
-import phone from './assets/images/phone_icon.svg';
-import facebook from './assets/images/facebook_icon.svg';
-import twitter from './assets/images/twitter_icon.svg';
-import instagram from './assets/images/instagram_icon.svg';
+import destination from '../assets/images/destination_icon.svg';
+import phone from '../assets/images/phone_icon.svg';
+import facebook from '../assets/images/facebook_icon.svg';
+import twitter from '../assets/images/twitter_icon.svg';
+import instagram from '../assets/images/instagram_icon.svg';
 
 const Footer = () => {
   return (

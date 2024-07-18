@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-import shirt from './assets/images/shirt_example.png';
+import shirt from '../assets/images/shirt_example.png';
 
 const Example = () => {
   // not sure why this does not work with carousel
