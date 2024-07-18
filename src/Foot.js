@@ -1,20 +1,28 @@
 import destination from './assets/images/destination_icon.svg';
 import phone from './assets/images/phone_icon.svg';
+import facebook from './assets/images/facebook_icon.svg';
+import twitter from './assets/images/twitter_icon.svg';
+import instagram from './assets/images/instagram_icon.svg';
 
 const Footer = () => {
   return (
-    <footer id="contact">
-      <div className='foot'>
-        <div className="footerContactInfo">
-          <img src={destination} alt="destination_icon" />
-          <p>111 Rideau St, Ottawa, ON K1N 9J7</p>
+    <div className="footer">
+      <footer id="contact">
+        <div className='foot'>
+          <div className="footerContactInfo">
+            <img src={destination} alt="destination_icon" />
+            <p>111 Rideau St, Ottawa, ON K1N 9J7</p>
+          </div>
+          <div className="footerContactInfo">
+            <img src={phone} alt="phone_icon" />
+            <p>(613) 555-5555</p>
+          </div>
+            <img src={facebook} alt="facebook_icon" />
+            <img src={instagram} alt='instagram_icon' />
+            <img src={twitter} alt="twitter_icon" />
         </div>
-        <div className="footerContactInfo">
-          <img src={phone} alt="phone_icon" />
-          <p>(613) 555-5555</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 
