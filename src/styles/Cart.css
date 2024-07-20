@@ -2,7 +2,7 @@
   /* border: 2px solid #ff0000;
   border-radius: 20px; */
   min-height: 100vh;
-  color: #ccc;
+  color: #ffe7fe;
   margin: auto;
   max-width: 75vw; /* Adjust this value to fit your desired width */
 }
@@ -19,14 +19,26 @@
   }
 }
 
+.backButton {
+  /* border: 2px solid #ff0000; */
+  justify-self: flex-start;
+  margin: 20px;
+  background-color: #d6a3f4;
+  border: #db4ec8;
+  border-radius: 20px;
+  padding: 10px;
+  color: #000000;
+  font-weight: bold;
+}
 
 .cart-details {
   /* border: 2px solid #ff0000; */
   display: flex;
+  margin-top: 20px;
 }
 .financial {
-  /* border: 2px solid #ff00d4;
-  border-radius: 20px; */
+  border: 2px solid #de66ca;
+  border-radius: 20px;
   flex: 1;
   padding: 20px;
   min-width: fit-content;
@@ -41,8 +53,8 @@
 }
 
 .product-info {
-  /* border-radius: 20px;
-  border: 1px solid #00fffb; */
+  border-radius: 20px;
+  border: 1px solid #eacced;
   padding: 10px;
   flex: 3;
   display: grid;

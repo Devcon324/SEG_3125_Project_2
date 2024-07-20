@@ -1,108 +1,75 @@
 import React from 'react';
+import FilterCheckBox from './FilterCheckBox';
 // import { useHistory } from 'react-router-dom';
 
+/**
+ ** This component is used to filter products based on categories, prices, and brands.
+ * @param {Object} filters - The filters object that contains the selected filters.
+ * @param {Function} onFilterChange - The function that is called when a filter is changed.
+ * @returns {JSX.Element}
+ */
 const FacetFilter = ({ filters, onFilterChange }) => {
-  const handleCheckboxChange = (e, type) => {
-    const { name, checked } = e.target;
-    onFilterChange(name, checked, type);
-  };
-
-  // const history = useHistory();
-
-  // const handleClick = () => {
-  //     history.push("/shop");
-  // }
-
   return (
     <div className="facet-filter">
-      <div>
-        <h3>Type</h3>
-        <div>
-          <input
-            type="checkbox"
-            name="T-Shirt"
-            checked={filters.categories.includes('T-Shirt')}
-            onChange={(e) => handleCheckboxChange(e, 'categories')}
-          />
-          <label>T-Shirt</label>
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="Sweater"
-            checked={filters.categories.includes('Sweater')}
-            onChange={(e) => handleCheckboxChange(e, 'categories')}
-          />
-          <label>Sweater</label>
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="Tank Top"
-            checked={filters.categories.includes('Tank Top')}
-            onChange={(e) => handleCheckboxChange(e, 'categories')}
-          />
-          <label>Tank Top</label>
-        </div>
-      </div>
+      <h3>Type</h3>
+      <FilterCheckBox
+        filterType={"T-Shirt"}
+        filterKey={'categories'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"Sweater"}
+        filterKey={'categories'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"Tank Top"}
+        filterKey={'categories'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
 
       <h3>Price</h3>
-      <div>
-        <input
-          type="checkbox"
-          name="$30+"
-          checked={filters.prices.includes('$30+')}
-          onChange={(e) => handleCheckboxChange(e, 'prices')}
-        />
-        <label>$30+</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          name="$20-29"
-          checked={filters.prices.includes('$20-29')}
-          onChange={(e) => handleCheckboxChange(e, 'prices')}
-        />
-        <label>$20-29</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          name="Below $20"
-          checked={filters.prices.includes('Below $20')}
-          onChange={(e) => handleCheckboxChange(e, 'prices')}
-        />
-        <label>Below $20</label>
-      </div>
+      <FilterCheckBox
+        filterType={"$30+"}
+        filterKey={'prices'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"$20-29"}
+        filterKey={'prices'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"Below $20"}
+        filterKey={'prices'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
 
       <h3>Brand</h3>
-      <div>
-        <input
-          type="checkbox"
-          name="Gildan"
-          checked={filters.brands.includes('Gildan')}
-          onChange={(e) => handleCheckboxChange(e, 'brands')}
-        />
-        <label>Gildan</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          name="Entripy"
-          checked={filters.brands.includes('Entripy')}
-          onChange={(e) => handleCheckboxChange(e, 'brands')}
-        />
-        <label>Entripy</label>
-      </div>
-      <div>
-        <input
-          type="checkbox"
-          name="Hanes"
-          checked={filters.brands.includes('Hanes')}
-          onChange={(e) => handleCheckboxChange(e, 'brands')}
-        />
-        <label>Hanes</label>
-      </div>
+      <FilterCheckBox
+        filterType={"Gildan"}
+        filterKey={'brands'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"Entripy"}
+        filterKey={'brands'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
+      <FilterCheckBox
+        filterType={"Hanes"}
+        filterKey={'brands'}
+        filters={filters}
+        onFilterChange={onFilterChange}
+      />
 
       <button className='resetFilterButton' onClick={(e) => {
       e.preventDefault();
@@ -110,6 +77,7 @@ const FacetFilter = ({ filters, onFilterChange }) => {
       }}>
         Reset Filter
       </button>
+
     </div>
   );
 };

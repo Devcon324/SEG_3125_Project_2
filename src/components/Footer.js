@@ -13,11 +13,11 @@ const Footer = () => {
         <div className='foot'>
           <div className="footerContactInfo">
             <img src={destination} alt="destination_icon" />
-            <p>111 Rideau St, Ottawa, ON K1N 9J7</p>
+            <address>111 Rideau St, Ottawa, ON K1N 9J7</address>
           </div>
           <div className="footerContactInfo">
             <img src={phone} alt="phone_icon" />
-            <p>(613) 555-5555</p>
+            <phone>(613) 555-5555</phone>
           </div>
             <img src={facebook} alt="facebook_icon" />
             <img src={instagram} alt='instagram_icon' />

@@ -16,7 +16,7 @@
   position: relative;
   text-align: left;
   color: #f8e8ff;
-  z-index: 0;
+  /* z-index: 0; */
 }
 .hero video {
   width: 100%;
@@ -27,7 +27,7 @@
       rgba(10,10,10, 0.7),
       rgba(10,10,10, 0.4));
   background-image:(rgba(10,10,10, 1));
-  z-index: 0;
+  /* z-index: 0; */
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -53,7 +53,7 @@
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  z-index: 0;
+  /* z-index: 0; */
 }
 /* for left bottom text */
 /* font-weight: bolder;

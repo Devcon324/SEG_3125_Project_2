@@ -2,12 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import SearchBar from './Searchbar';
+import shoppingCart from '../assets/images/shoppingCart.svg';
+import { Tooltip } from 'react-tooltip'
 
 // import styles
 import '../styles/Navbar.css';
-
-
-import { Tooltip } from 'react-tooltip'
 
 
 const NavScrollExample = () => {
@@ -36,15 +35,6 @@ const NavScrollExample = () => {
               >Shop
               <Tooltip id="shop-tooltip" />
             </Nav.Link>
-            {/* <NavDropdown title="Popular Designs" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">ALL SHIRTS</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action4">T-Shirt</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Long-Sleeve Shirt</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Hoodie</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Tank Top</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Dress Shirt</NavDropdown.Item>
-            </NavDropdown> */}
             <Nav.Link href="/faq"
               data-tooltip-id="faq-tooltip"
               data-tooltip-content="Frequently Asked Questions"
@@ -61,6 +51,16 @@ const NavScrollExample = () => {
             </Nav.Link>
           </Nav>
           <div className='d-flex'>
+            <Nav.Link>
+              {/* Cart does not go to other cart because we need a database, hard coding is not the point of the SEG 3125 course */}
+              <img src={shoppingCart}
+              alt="cart"
+              className='cartIcon'
+              data-tooltip-id="cart-tooltip"
+              data-tooltip-content="Shopping Cart"
+              data-tooltip-place="bottom"
+            /></Nav.Link>
+            <Tooltip id="cart-tooltip" />
             < SearchBar />
           </div>
         </Navbar.Collapse>

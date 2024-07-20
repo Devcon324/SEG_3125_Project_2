@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 const CartItem = (props) => {
+  // get the name of the product from the props
   const cartItemName = JSON.stringify(props.product.name).replace(/"/g, '');
 
 
@@ -9,13 +10,16 @@ const CartItem = (props) => {
   // console.log("in CartItem.js quantity = " + JSON.stringify(props.quantity));
   // console.log("in CartItem.js product = " + JSON.stringify(props.product.name));
 
-  // function to increment or decrement the quantity of the product
-  // let itemCount = 1;
+  /*
+  PROBLEM: I need to track the quantity of the product for the users cart
+  SOLUTION: i need to make a user account, who has a cart object
+  that has a list of products and their quantities
+  point of the course is not for semantics, but for UI design
+  */
 
-  // Resolution: i need ot make a cart object and keep updating it
-  // point of the course is not for semantics, but for UI design
-  //
-
+  // this is a hook that will keep track of the quantity of the product
+  // [variable name, function to update the variable] = useState(initial value)
+  // function ahs form of name(logic to update the variable)
   const [quantity, setItemCount] = useState(1);
   const incrementQuantity = () => {
       setItemCount(quantity + 1)
