@@ -1,21 +1,20 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-
-// import { NavLink } from "react-router-dom";
 import SearchBar from './Searchbar';
 
 // import styles
 import '../styles/Navbar.css';
 
-function NavScrollExample() {
+
+import { Tooltip } from 'react-tooltip'
+
+
+const NavScrollExample = () => {
   return (
     <Navbar bg="transparent" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#" className='title'><h1>Style Wear</h1></Navbar.Brand>
+        <Navbar.Brand href="/" className='title'><h1>Style Wear</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -23,8 +22,20 @@ function NavScrollExample() {
             style={{ maxHeight: '750px' }}
             navbarScroll
           >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/shop">Shop</Nav.Link>
+            <Nav.Link href="/"
+              data-tooltip-id="home-tooltip"
+              data-tooltip-content="Our main page"
+              data-tooltip-place="top"
+              >Home
+              <Tooltip id="home-tooltip" />
+            </Nav.Link>
+            <Nav.Link href="/shop"
+              data-tooltip-id="shop-tooltip"
+              data-tooltip-content="shop for our products"
+              data-tooltip-place="top"
+              >Shop
+              <Tooltip id="shop-tooltip" />
+            </Nav.Link>
             {/* <NavDropdown title="Popular Designs" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">ALL SHIRTS</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -34,21 +45,23 @@ function NavScrollExample() {
               <NavDropdown.Item href="#action4">Tank Top</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Dress Shirt</NavDropdown.Item>
             </NavDropdown> */}
-            <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/faq"
+              data-tooltip-id="faq-tooltip"
+              data-tooltip-content="Frequently Asked Questions"
+              data-tooltip-place="top"
+            >FAQ
+              <Tooltip id="faq-tooltip" />
+            </Nav.Link>
+            <Nav.Link href="/contact"
+              data-tooltip-id="contact-tooltip"
+              data-tooltip-content="Contact Us"
+              data-tooltip-place="top"
+              >Contact
+              <Tooltip id="contact-tooltip" />
+            </Nav.Link>
           </Nav>
-          {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
           <div className='d-flex'>
             < SearchBar />
-            <Button variant="outline-success">Search</Button>
           </div>
         </Navbar.Collapse>
       </Container>

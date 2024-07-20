@@ -1,0 +1,114 @@
+.shop {
+  min-height: 100vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  color: #000000;
+}
+
+.app {
+  display: flex;
+}
+
+.facet-filter {
+  background-color: #cfafcb;
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #cfafcb;
+  min-width: fit-content;
+  max-width: max-content;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.facet-filter label{
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+
+.product-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+  padding-left:  20px;
+}
+
+/* This adjusts shop grid based on screen size */
+@media screen and (max-width: 1800px) {
+  .product-list {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .product-list {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product-list {
+    grid-template-columns: auto;
+  }
+}
+
+
+.product-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.product-image {
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 1500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .product-image {
+    max-width: 30vw; /* Adjust this value to fit your desired width */
+  }
+}
+@media (min-width: 500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .product-image {
+    max-width: 15vw; /* Adjust this value to fit your desired width */
+  }
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.resetFilterButton {
+  background-color: #f9cbf3;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.purchase-button {
+  background-color: #f9cbf3;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}

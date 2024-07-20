@@ -1,6 +1,12 @@
 /* Search Bar */
 .searchBar {
-  z-index: 1;
+  /* position: absolute; */
+  z-index: 99;
+  /* margin-right: 30vw; */
+}
+.barButton {
+  display: flex;
+  flex-direction: row;
 }
 .searchBar input {
   /* width: 150%; */
@@ -16,6 +22,7 @@
   padding: 0;
   margin: 0;
   z-index: 1;
+  position: absolute;
 }
 .search-result-item {
   display: flex;

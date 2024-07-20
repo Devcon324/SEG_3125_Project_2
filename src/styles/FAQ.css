@@ -1,0 +1,19 @@
+.FAQ {
+  min-height: 100vh;
+}
+.faqContent {
+  margin: auto;
+  max-width: 75vw; /* Adjust this value to fit your desired width */
+}
+@media screen and (min-width: 1500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .faqContent {
+    max-width: 40vw; /* Adjust this value to fit your desired width */
+  }
+}
+@media screen and (max-width: 500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .faqContent {
+    max-width: 60vw; /* Adjust this value to fit your desired width */
+  }
+}

@@ -3,8 +3,10 @@ import '../styles/AboutUs.css';
 
 const AboutUs = () => {
     return (
-      <div className="aboutUs">
-        <div>
+      <div>
+        <div className="divider"><br/></div>
+        <div className="aboutUs">
+          <div>
             <h1>Our Mission</h1>
             <p>
               We are committed to providing the best quality clothing to our customers.
@@ -42,6 +44,8 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
+        <div className="divider"><br/></div>
+      </div>
     );
 };
 

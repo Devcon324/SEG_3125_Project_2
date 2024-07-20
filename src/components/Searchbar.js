@@ -1,29 +1,11 @@
 import React, { useState } from 'react';
+import products from '../data/Products';
+import { Button } from 'react-bootstrap';
+
 // import styles
 import '../styles/SearchBar.css';
 
-const items = [
-  { name: 'T-Shirt' },
-  { name: 'Long-Sleeve'},
-  { name: 'Tank Top'},
-  { name: 'Dress Shirt'},
-  { name: 'Polo Shirt' },
-  { name: 'Hoodie' },
-  { name: 'Sweatshirt' },
-  { name: 'Button-Down Shirt' },
-  { name: 'V-Neck Shirt' },
-  { name: 'Henley Shirt' },
-  { name: 'Flannel Shirt' },
-  { name: 'Graphic Tee' },
-  { name: 'Oxford Shirt' },
-  { name: 'Pullover' },
-  { name: 'Sleeveless Shirt' },
-  { name: 'Raglan Shirt' },
-  { name: 'Peplum Top' },
-  { name: 'Crop Top' },
-  { name: 'Off-Shoulder Top' },
-  { name: 'Wrap Shirt' },
-];
+const items = products;
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -49,26 +31,42 @@ const SearchBar = () => {
     setFilteredItems([]);
   };
 
+  const handleEnterShop = (event) => {
+    event.preventDefault();
+    const value = event.target.value;
+    // send the user to the shop page with the search term as a query parameter
+    window.location.href = `/shop?search=${value}`;
+    console.log("Entering shop with value:", value);
+  };
+
   return (
-    <div className='searchBar'>
-      <input
-        type="text"
-        placeholder="Search our stuff!"
-        value={searchTerm}
-        onChange={handleInputChange}
-      />
-      {filteredItems.length > 0 && (
-        <ul className="search-results">
-          {filteredItems.map((item) => (
-            <li key={item.name} onClick={() => handleResultClick(item)}>
-              <div className="search-result-item">
-                {/* Use the actual image URL from the item object */}
-                <span className="result-text">{item.name}</span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className='barButton'>
+      <div className='searchBar'>
+        <input
+          type="text"
+          placeholder="Search our stuff!"
+          value={searchTerm}
+          onChange={handleInputChange}
+        />
+        {filteredItems.length > 0 && (
+          <ul className="search-results">
+            {filteredItems.map((item) => (
+              <li key={item.name} onClick={() => handleResultClick(item)}>
+                <div className="search-result-item">
+                  {/* Use the actual image URL from the item object */}
+                  <span className="result-text">{item.name}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+    </div>
+    <Button
+              variant="outline-success"
+              onClick={handleEnterShop}
+              value={searchTerm}
+              >Search
+            </Button>
     </div>
   );
 };

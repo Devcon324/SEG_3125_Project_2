@@ -6,6 +6,7 @@ import Create from './pages/Create';
 import Shop from './pages/Shop';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import Cart from './pages/Cart';
 
 // This is a component named App that returns JSX template
 // this is the first component that is rendered to the DOM
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           < Contact />
+        </Route>
+        <Route exact path="/cart">
+          < Cart />
         </Route>
       </Switch>
       {/* Shows Footer on All Pages */}

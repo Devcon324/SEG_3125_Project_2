@@ -1,0 +1,81 @@
+.cart {
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  min-height: 100vh;
+  color: #ccc;
+  margin: auto;
+  max-width: 75vw; /* Adjust this value to fit your desired width */
+}
+@media screen and (min-width: 1500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .cart {
+    max-width: 40vw; /* Adjust this value to fit your desired width */
+  }
+}
+@media screen and (max-width: 500px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .cart {
+    max-width: 60vw; /* Adjust this value to fit your desired width */
+  }
+}
+
+
+.cart-details {
+  border: 2px solid #ff0000;
+  display: flex;
+}
+.financial {
+  border: 2px solid #ff00d4;
+  border-radius: 20px;
+  flex: 1;
+  padding: 20px;
+  min-width: fit-content;
+  max-width: max-content;
+  font-weight: bold;
+}
+
+.products-in-cart {
+  border-radius: 20px;
+  border: 3px solid #00ff04;
+  width: 100%;
+}
+
+.product-info {
+  border-radius: 20px;
+  border: 1px solid #00fffb;
+  padding: 10px;
+  flex: 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* padding-left:  20px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  border: 1px solid #00ff04;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+.quantity button {
+  border: 1px solid #00ff04;
+  background-color: #d6a3f4;
+  border-radius: 20%;
+  padding: 5px;
+  cursor: pointer;
+}
+.quantity button:hover {
+  background-color: #db4ec8;
+}
+
+.quantity p {
+  border: 1px solid #00ff04;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
+  margin: auto;
+}
