@@ -1,7 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { NavLink } from "react-router-dom";
-import { Nav } from 'react-bootstrap';
+// import { useHistory } from 'react-router-dom';
 
 const FacetFilter = ({ filters, onFilterChange }) => {
   const handleCheckboxChange = (e, type) => {
@@ -9,11 +7,11 @@ const FacetFilter = ({ filters, onFilterChange }) => {
     onFilterChange(name, checked, type);
   };
 
-  const history = useHistory();
+  // const history = useHistory();
 
-  const handleClick = () => {
-      history.push("/shop");
-  }
+  // const handleClick = () => {
+  //     history.push("/shop");
+  // }
 
   return (
     <div className="facet-filter">
