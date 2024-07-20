@@ -1,43 +1,26 @@
-import Faq from "react-faq-component";
-import FaqData from "../data/FaqData";
-// import styles
+import React, { useState } from "react";
+import FAQContent from "../components/FAQContent";
 import '../styles/FAQ.css';
 
-const styles = {
-  bgColor: '#535353',
-  titleTextColor: "white",
-  rowTitleColor: "#dddddd",
-  rowContentColor: 'beige',
-  arrowColor: "white",
-  // margin
-  rowContentTextSize: '16px',
-  rowContentPaddingTop: '10px',
-  rowContentPaddingBottom: '10px',
-  rowContentPaddingLeft: '50px',
-  rowContentPaddingRight: '150px',
-};
-
-const config = {
-  animate: true,
-};
-
 const FAQ = () => {
-    return (
-      <div className="FAQ">
-        <p style={{
-          color: 'white',
-          fontSize: '50px',
-          textAlign: 'center',
-          marginTop: '5px'
-        }}>Frequently Asked Questions</p>
-        <div className="faqContent">
-        <Faq
-          data={FaqData}
-          styles={styles}
-          config={config}
-        />
-        </div>
-      </div>
+  const [language, setLanguage] = useState("English");
+  const changeLanguage = () => {
+    if (language === "English") {
+      setLanguage("French");
+    }
+    else {
+      setLanguage("English");
+    }
+  }
+
+  return (
+    <div className="FAQ">
+      <button
+      className="language-button"
+      onClick={() => changeLanguage()}
+      >Change Language: {language}</button>
+      <FAQContent language={language} />
+    </div>
     );
 };
 

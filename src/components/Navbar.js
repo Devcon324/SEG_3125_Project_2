@@ -11,7 +11,7 @@ import '../styles/Navbar.css';
 
 const NavScrollExample = () => {
   return (
-    <Navbar bg="transparent" variant="dark" expand="lg">
+    <Navbar bg="transparent" variant="dark" expand="lg" role='navigation'>
       <Container fluid>
         <Navbar.Brand href="/" className='title'><h1>Style Wear</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

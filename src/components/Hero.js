@@ -6,7 +6,12 @@ const Hero = () => {
   return (
     <div className="hero-image">
       <div className="hero">
-        <video src={ fashion_hero } autoPlay loop muted />
+        <video
+          src={ fashion_hero }
+          autoPlay loop muted
+          alt="Hero Video"
+          role='presentation'
+        />
         <div className="heroText">
           <h1>Keep Cool, Look Cool</h1>
           <p>Shop the latest trends in fashion</p>

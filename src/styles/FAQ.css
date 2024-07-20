@@ -1,6 +1,18 @@
 .FAQ {
   min-height: 100vh;
 }
+.language-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #e6c3ff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
 .faqContent {
   margin: auto;
   max-width: 75vw; /* Adjust this value to fit your desired width */

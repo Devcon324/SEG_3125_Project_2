@@ -62,7 +62,7 @@ const SearchBar = () => {
         )}
     </div>
     <Button
-              variant="outline-success"
+              variant="secondary"
               onClick={handleEnterShop}
               value={searchTerm}
               >Search
