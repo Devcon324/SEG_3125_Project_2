@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.css';
 
 // import the App component from the App.js file
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-tooltip/dist/react-tooltip.css'
 
 // takes all react components and renders them to the root element in DOM
 // renders the App component to the root element

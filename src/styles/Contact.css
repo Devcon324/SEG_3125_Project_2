@@ -1,0 +1,24 @@
+.ContactUs {
+  min-height: 100vh;
+}
+.contactInfo {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: bisque;
+}
+.contactInfo .streetPhone {
+  display: flex;
+  gap: 1rem;
+}
+.contactInfo .socialMedia {
+  display: flex;
+  gap: 1rem;
+}
+.contactInfo img {
+  width: 30px;
+  height: 30px;
+}
