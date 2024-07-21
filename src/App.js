@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import Create from './pages/Create';
 import Shop from './pages/Shop';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
@@ -20,9 +19,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           < Home />
-        </Route>
-        <Route exact path="/create">
-          < Create />
         </Route>
         <Route exact path="/shop">
           < Shop />
