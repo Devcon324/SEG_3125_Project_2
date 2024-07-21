@@ -73,7 +73,11 @@ const EmailForm = () => {
             />
           </label>
           <br />
-          <button type="submit"onClick={handleSubmit}>Confirm Message</button>
+          <button
+            className='submitButton'
+            type="submit"
+            onClick={handleSubmit}
+          >Confirm Message</button>
         </form>
       </div>
     </div>
